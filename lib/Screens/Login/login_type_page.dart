@@ -23,7 +23,7 @@ class _LoginTypePageState extends State<LoginTypePage> {
             children: <Widget>[
               Text(
                 "LOGIN PAGE",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
               ),
               SizedBox(height: size.height * 0.05),
               RoundedButton(

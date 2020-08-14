@@ -10,6 +10,7 @@ import 'package:helping_hands/components/rounded_input_field.dart';
 import 'package:helping_hands/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -59,7 +60,7 @@ class _BodyState extends State<Body> {
                     return VisitPage();
                   }));
                 } catch (e) {
-                  print(e);
+                  Fluttertoast.showToast(msg: "something went wrong");
                 }
               },
             ),
