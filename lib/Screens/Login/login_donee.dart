@@ -8,6 +8,7 @@ import 'package:helping_hands/components/rounded_password_field.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:helping_hands/components/already_have_an_account_acheck.dart';
 import 'package:helping_hands/Screens/Signup/signup_screen.dart';
+import 'package:helping_hands/doner_visit_page.dart';
 
 class LoginDonee extends StatefulWidget {
   @override
@@ -61,7 +62,7 @@ class _LoginDoneeState extends State<LoginDonee> {
                     if (user != null) {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return VisitPage();
+                        return DonerVisitPage();
                       }));
                     }
                   } catch (e) {

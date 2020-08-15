@@ -11,7 +11,7 @@ import 'package:helping_hands/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
+import 'package:helping_hands/register.dart';
 class Body extends StatefulWidget {
   @override
   _BodyState createState() => _BodyState();
@@ -57,7 +57,7 @@ class _BodyState extends State<Body> {
                       email: email, password: password);
 
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return VisitPage();
+                    return RegisterPage();
                   }));
                 } catch (e) {
                   Fluttertoast.showToast(msg: "something went wrong");

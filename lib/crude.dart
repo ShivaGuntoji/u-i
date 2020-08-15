@@ -10,4 +10,13 @@ class CrudeMethods {
       print(e);
     });
   }
+  Future getData() async
+  {
+    return await Firestore.instance.collection("donor").snapshots();
+  }
+  getPhoneNumber(String searchField) async {
+    searchField = searchField.trim();
+    return await Firestore.instance.collection(
+        "donation").where('email', isEqualTo: searchField).getDocuments();
+  }
 }

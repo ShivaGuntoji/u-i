@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helping_hands/doner_visit_page.dart';
 import 'constants.dart';
 import 'package:helping_hands/Screens/Welcome/welcome_screen.dart';
 import 'package:helping_hands/Screens/visit_page.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: VisitPage(),
+      home: DonerVisitPage(),
     );
   }
 }
